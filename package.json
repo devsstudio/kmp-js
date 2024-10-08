@@ -1,6 +1,6 @@
 {
   "name": "@devs-studio/kmp-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS libraries for KMP",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,8 +13,10 @@
     "url": "git+https://github.com/devsstudio/kmp-js.git"
   },
   "keywords": [
-    "JS",
-    "KMP"
+    "js",
+    "kmp",
+    "idb",
+    "indexeddb"
   ],
   "author": "Devs Studio",
   "license": "ISC",
