@@ -3,24 +3,14 @@ This page is based on [SQL.js Web Worker]: https://sqldelight.github.io/sqldelig
 # SQL.js Web Worker
 
 To include the SQL.js worker in your project, first add a dependency on the worker package along with a dependency on [SQL.js].
-=== "Kotlin"
-    ```kotlin
-    kotlin {
-      sourceSets.jsMain.dependencies {
-            implementation(npm("@devs-studio/kmp-js", "1.0.0"))
-        implementation(npm("sql.js", "1.8.0"))
-      }
-    }
-    ```
-=== "Groovy"
-    ```groovy
-    kotlin { 
-      sourceSets.jsMain.dependencies {
-            implementation(npm("@devs-studio/kmp-js", "1.0.0"))
-        implementation npm("sql.js", "1.8.0")
-      }
-    }
-    ```
+```kotlin
+kotlin {
+  sourceSets.jsMain.dependencies {
+        implementation(npm("@devs-studio/kmp-js", "1.0.0"))
+    implementation(npm("sql.js", "1.8.0"))
+  }
+}
+```
 
 The [SQL.js] package includes a WebAssembly binary that must be copied into your application's output.
 In your project, add an [additional Webpack configuration file](https://kotlinlang.org/docs/js-project-setup.html#webpack-configuration-file)
