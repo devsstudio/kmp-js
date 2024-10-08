@@ -6,7 +6,7 @@ To include the SQL.js worker in your project, first add a dependency on the work
 ```kotlin
 kotlin {
   sourceSets.jsMain.dependencies {
-        implementation(npm("@devs-studio/kmp-js", "1.0.0"))
+    implementation(npm("@devs-studio/kmp-js", "1.0.0"))
     implementation(npm("sql.js", "1.8.0"))
   }
 }
